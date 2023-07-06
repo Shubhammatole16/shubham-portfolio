@@ -1,0 +1,84 @@
+body .projectcontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height:auto;
+}
+
+body .projectcontainer .project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body .projectcontainer h1{
+    padding: 30px 50px;
+}
+
+.yellow{
+    color: rgb(255, 187, 0);
+}
+
+
+body .projectcontainer .project .container1{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto; 
+    background-color: rgb(30, 60, 148);
+    border-radius: 10px;
+}
+
+h2{
+    padding: 10px 10px;
+}
+
+p{
+    padding: 10px 30px;
+}
+
+h3{
+    padding: 10px 10px;
+}
+
+body .projectcontainer .project .container1 .rightcontainer img{
+    width:400px;
+    height:200px;
+    border-radius: 15px;
+    padding: 45px 20px;
+}
+
+body .projectcontainer .project .container1  .leftcontainer1 a .fa{
+    font-size: 2rem;
+    color: rgb(255, 187, 0);
+    padding: 10px 10px;
+}
+body .projectcontainer .project .container1 .leftcontainer1 a i:hover{
+    transform: scale(1.2,1.2);
+}
+
+
+body .projectcontainer .project .container1  .rightcontainer img:hover{
+    transform: scale(1.1,1.1);
+}
+  
+body footer{
+    position:inherit;
+    bottom: 0;
+    width: 100%;
+    
+}
+.dark-mode #container1{
+    background-color: rgb(49, 40, 40);
+}
+
+
+
+/*RESPONSIVENESS FOR MEDIA SCREEN BELOW 1010 PX*/
+@media screen and (max-width: 1010px) {
+    .rightcontainer img{
+        display: none;
+    }
+}
+
