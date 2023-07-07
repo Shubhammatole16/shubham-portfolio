@@ -388,11 +388,7 @@ svg {
 
 /* RESPONSIVENESS FOR MEDIA SCREEN BELOW 700 PX*/
 @media screen and (max-width: 700px) {
-    body footer .social-container .social-icons li {
-        font-size: 0.7rem;
-        margin: 0 -26px;
-    }
-
+    
     body footer .text {
         padding: 0px 0px;
         font-size: small;
@@ -434,9 +430,7 @@ svg {
     }
 
     footer .social-container .social-icons li {
-        font-size: 1.0rem;
-        padding: 0px 0px;
-        margin: 0px -18px;
+        display: none;
     }
 }
 
