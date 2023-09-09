@@ -5,6 +5,7 @@ var mode = document.getElementById("mode");
 
 // FUNCTION FOR DARK MODE
 function myFunction() {
+  clickSound.play();
   var element = document.body;
   element.classList.toggle("light-mode");
 
