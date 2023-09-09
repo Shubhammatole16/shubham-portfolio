@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--Start of header-->
+    <header>
+        <!--Start of nav-->
+        <nav>
+            <!--Start of left-->
+            <div class="left"> <b class="logo">Shubham's Portfolio</b></bShubham>
+            </div>
+            <!--End of left-->
+
+            <!--Start of right-->
+            <div class="right">
+                <ul>
+                    <li onclick="scrollToSection('home')">Home</li>
+                    <li onclick="scrollToSection('project')">Projects</li>
+                    <li onclick="scrollToSection('about')">About</li>
+                    <li onclick="scrollToSection('contact')">Contact</li>
+                    <li>
+                        <button class="btn1" onclick="myFunction()"> <img id="mode" src="files/light.png"></button>
+                    </li>
+                </ul>
+            </div>
+            <!--End of right-->
+        </nav>
+        <!--End of nav-->
+    </header>
+    <!--End of header-->
+
+
+
+    <!--Start of main-->
+    <section id="home">
+        <!--Start of firstsection -->
+        <section class="firstsection">
+            <div class="leftsection">Hi there, <div class="myname">My name is <span class="purple">Shubham Matole</span>
+                </div>
+                <div class="fullstack">Full-Stack Web Developer</div>
+                <span id="element"></span><br><br>
+                <button class="btn2" onclick="downloadResume()">Download CV</button>
+                <button class="btn3" onclick="scrollToSection('contact')">Get in touch</button>
+            </div>
+            <div class="circular-container"><img src="files/developer-dark.png" id="developer"></div>
+        </section>
+        <!--End of firstsection -->
+        <!-- <hr> -->
+    </section>
+    <!--End of main-->
+
+
+    <hr>
+
+    <!--Start of projectcontainer-->
+    <section class="projectcontainer" id="project">
+        <h1>Projects</h1>
+        <!--Start of project 1-->
+        <div class="project">
+            <!--Start of container1-->
+            <div class="container1" id="container1">
+                <!--Start of leftcontainer1-->
+                <div class="leftcontainer1">
+                    <h2>
+                        <sapn class="yellow"><b>Personal Portfolio : </b></sapn>
+                    </h2>
+                    <p>My portfolio website is a visually appealing and responsive platform that showcases my skills and
+                        projects. It features sections like About Me, Projects and Contact. Users can easily get in
+                        touch with me through the contact section. The website is designed to grow as I continue to add
+                        new projects and update my skills.</p>
+                    <h3>
+                        <sapn class="yellow"><b>Technologies Used : </b></sapn>
+                    </h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/Shubhammatole16/shubham-portfolio"><i class="fa fa-github"></i></a>
+                </div>
+                <!--End of leftcontainer1-->
+                <!--Start of rightcontainer-->
+                <div id="ease" class="rightcontainer"><img src="files/p1.png">
+
+                </div>
+                <!--End of rightcontainer-->
+            </div>
+            <!--End of container1-->
+        </div>
+        <!--End of project-->
+        <br>
+        <!--Start of project 2-->
+        <div class="project">
+            <!--Start of container1-->
+            <div class="container1" id="container1">
+                <!--Start of leftcontainer1-->
+                <div class="leftcontainer1">
+                    <h2>
+                        <sapn class="yellow"><b>Coverpage-Generator : </b></sapn>
+                    </h2>
+                    <p>- This Web App was created for my sister. It is designed to make college life easier by providing
+                        a hassle-free solution for
+                        generating cover pages for lab reports. Student just needs to fill the required information in
+                        the user-friendly input fields
+                        and upon clicking the download button the PDF cover page will be generated. Other features are
+                        coming soon.
+                    </p>
+                    <h3>
+                        <sapn class="yellow"><b>Technologies Used : </b></sapn>
+                    </h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/Shubhammatole16/Coverpage-Generator"><i class="fa fa-github"></i></a>
+                </div>
+                <!--End of leftcontainer1-->
+                <!--Start of rightcontainer-->
+                <div id="ease" class="rightcontainer"><img src="files/p2.png">
+
+                </div>
+                <!--End of rightcontainer-->
+            </div>
+            <!--End of container1-->
+        </div>
+        <!--End of project-->
+
+        <br>
+        <!--Start of project 3-->
+        <div class="project">
+            <!--Start of container1-->
+            <div class="container1" id="container1">
+                <!--Start of leftcontainer1-->
+                <div class="leftcontainer1">
+                    <h2>
+                        <sapn class="yellow"><b>E-Commerce(JAVA) : </b></sapn>
+                    </h2>
+                    <p>- Project involves the development of a dynamic E-commerce website, offering an engaging
+                        shopping experience for users.
+                        This project is divided into two phases: one tailored for regular users and another dedicated to
+                        administrative functions. For regular users, the platform allows seamless browsing and searching
+                        for products, facilitating easy additions to the cart. Users can navigate through user-friendly
+                        categories and access categorically organized products. On the admin side, a dedicated dashboard
+                        empowers administrators to manage product listings, categories, and user accounts.
+                        For displaying popup message i have made use of sweatalert.
+                    </p>
+                    <h3>
+                        <sapn class="yellow"><b>Technologies Used : </b></sapn>
+                    </h3>
+                    <p>JSP, Servlets, JDBC, Bootstrap, and MySQL.</p>
+                    <a href="https://github.com/Shubhammatole16/java-SHOP-ME"><i class="fa fa-github"></i></a>
+                </div>
+                <!--End of leftcontainer1-->
+                <!--Start of rightcontainer-->
+                <div id="ease" class="rightcontainer"><img src="files/p3.png">
+
+                </div>
+                <!--End of rightcontainer-->
+            </div>
+            <!--End of container1-->
+        </div>
+        <!--End of project-->
+    </section>
+    <!--End of projectcontainer-->
+    <br>
+    <hr>
+
+
+
+
+    <!-- START OF ABOUT  SECTION-->
+    <section class="aboutcontainer" id="about">
+        <h1>About Me :</h1>
+        <div class="about">
+            <div class="abcontainer">
+                <p><span class="yellow">Hello,</span> Welcome to my portfolio website! I'm <span class="yellow">Shubham
+                        Matole,</span>
+                    a passionate software developer and recent Computer Science Engineering graduate.<br><br>
+
+                    With a strong foundation in programming and a keen interest in technology,
+                    I strive to create innovative and efficient solutions. I specialize in various
+                    development such as web development, with expertise in HTML, CSS, JavaScript, java, SQL etc.<br><br>
+
+                    My projects showcase my skills in creating user-friendly web applications and solving real-world
+                    problems.
+                    I'm excited to share my journey, projects, and experiences with you.<br><br>
+
+                    Feel free to explore my portfolio and get in touch!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- END OF ABOUT  SECTION-->
+    <hr>
+
+
+
+    <!-- START OF CONTACT  SECTION-->
+    <section class="contactcontainer" id="contact">
+        <h1>Contact Me :</h1>
+        <div class="contact">
+            <div class="contactcontainer">
+                <form id="contactForm">
+                    <label for="name" style="padding-right: 36px;">Name : </label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name.." required>
+                    <br>
+                    <label for="email" style="padding-right: 40px;">Email : </label>
+                    <input type="mail" id="email" name="email" placeholder="Enter your mail.." required>
+                    <br>
+                    <label for="phone" style="padding-right: 33px;">Phone : </label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number.." required>
+                    <br>
+                    <label for="message" style="padding-right: 10px;">Message : </label>
+                    <input type="text" id="message" name="message" placeholder="Enter your message.." required>
+                    <br>
+                    <div class="fbutton">
+                        <button type="submit" onclick="sendEmail(event)">Submit</button>&nbsp;
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- END OF CONTACT  SECTION-->
+
+
+
+    <!-- Start of popupContainer -->
+    <div id="popupContainer" class="popup-container">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2 id="popupMessage"></h2>
+        </div>
+    </div>
+    <!-- End of popupContainer -->
+
+
+
+
+    <!--Start of footer-->
+    <footer>
+        <div class="footer">
+            <!--Start of text footer-->
+            <div class="text">
+                <h2>Shubham Matole</h2>
+            </div>
+            <!--End of itext footer-->
+
+            <!--Start of social-container footer-->
+            <div class="social-container">
+                <ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/in/shubham-matole-81335021b"><i
+                                class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/shubham._007_"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/Shubhammatole16"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/shubham.matole.7"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+
+            </div>
+            <!--End of social-container footer-->
+
+        </div>
+    </footer>
+    <!--End of footer-->
+
+
+
+
+    <script src="script/js.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('-PgfGZa-MfaRrnqXu');
+        })();
+
+
+    </script>
+</body>
+
+</html>
