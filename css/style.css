@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --Text-color: #f0f2f8;
+    --main-text: linear-gradient(90deg, rgb(0, 68, 255) 0%, rgb(255, 0, 0) 100%);
+    --Text-design: rgb(255, 187, 0);
+    --background-color: #1c1c1eff;
+    --border-color: #30363d;
+    --header-background: #0d1117;
+    --full-stack: rgb(251, 231, 176);
+    font-weight: bolder;
+}
+
+.light-mode {
+    --Text-color: #0d1117;
+    --main-text: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(0, 68, 255) 100%);
+    --Text-design: rgb(0, 115, 255);
+    --background-color: rgb(247, 242, 242);
+    --border-color: #e9e9e9;
+    --header-background: rgb(156, 157, 159);
+    --full-stack: rgb(81, 151, 236);
+    font-weight: bolder;
+}
+
+.active-nav-link {
+    color: var(--Text-design);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--Text-color);
+}
+
+section {
+    min-height: 100vh;
+}
+
+
+
+
+/*CSS FOR NAVIGATION BAR*/
+
+body header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background-color: var(--header-background);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+body header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+body header nav ul li {
+    list-style: none;
+    margin: 0 23PX;
+    padding-top: 15px;
+}
+
+
+body header nav ul li:hover {
+    text-decoration: none;
+    color: var(--Text-design);
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+body header nav ul li button img {
+    color: var(--Text-color);
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+body header nav ul li button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+body header nav .left {
+    font-size: 2rem;
+    background: var(--main-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+/*CSS FOR HOME SECTION*/
+body section .firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+
+}
+
+
+body section .firstsection .leftsection {
+    font-size: 1.5rem;
+    padding-left: 60px;
+    font-weight: bolder;
+}
+
+body section .firstsection .leftsection .myname {
+    font-size: 2.8rem;
+    font-weight: bolder;
+}
+
+body section .firstsection .leftsection .fullstack {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--full-stack);
+    padding-bottom: 10px;
+}
+
+.circular-container {
+    width: 20rem;
+    height: 22rem;
+    border-radius: 50%;
+    border: 15px solid var(--header-background);
+    background-color: var(--border-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 25px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0);
+}
+
+.circular-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+body section .firstsection .leftsection .purple {
+    color: var(--Text-design);
+}
+
+body section .firstsection .leftsection #element {
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+
+body section .firstsection .leftsection .btn2 {
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+body section .firstsection .leftsection .btn3 {
+    padding: 10px 35px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+body section .firstsection .leftsection .btn3 {
+    color: var(--Text-design);
+    font-weight: bolder;
+    border: 4px solid #000;
+    border-color: var(--Text-design);
+    background-color: transparent;
+}
+
+body section .firstsection .leftsection .btn2 {
+    color: var(--Text-color);
+    font-weight: bolder;
+    border: 4px solid #000;
+    border-color: var(--Text-design);
+    background-color: var(--Text-design);
+}
+
+body section .firstsection .leftsection .btn3:hover {
+    color: var(--Text-color);
+    background-color: var(--Text-design);
+}
+
+
+
+
+/* CSS FOR PROJECT SECTION*/
+body .projectcontainer .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .projectcontainer h1 {
+    padding: 30px 50px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 2rem;
+    color: var(--Text-design);
+}
+
+.yellow {
+    color: var(--Text-design);
+}
+
+
+body .projectcontainer .project .container1 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    background-color: var(--border-color);
+    border-radius: 10px;
+}
+
+h2 {
+    padding: 10px 10px;
+}
+
+p {
+    padding: 10px 30px;
+}
+
+h3 {
+    padding: 10px 10px;
+}
+
+body .projectcontainer .project .container1 .rightcontainer img {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 45px 20px;
+}
+
+body .projectcontainer .project .container1 .leftcontainer1 a .fa {
+    font-size: 2rem;
+    color: var(--Text-design);
+    padding: 10px 10px;
+}
+
+body .projectcontainer .project .container1 .leftcontainer1 a i:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+body .projectcontainer .project .container1 .rightcontainer img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+
+
+/*CSS FOR  ABOUT SECTION*/
+body .aboutcontainer {
+    min-height: 100vh;
+}
+
+body .aboutcontainer h1 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding: 30px 50px;
+    font-size: 2rem;
+    color: var(--Text-design);
+}
+
+body .aboutcontainer .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .aboutcontainer .about .abcontainer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    background-color: var(--border-color);
+    border-radius: 10px;
+}
+
+body .aboutcontainer .about .abcontainer p {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    font-weight: 400;
+}
+
+
+
+/* CSS FOR CONTACT SECTION*/
+
+body .contactcontainer {
+    min-height: 90vh;
+}
+
+body .contactcontainer h1 {
+    margin-top: 5%;
+    padding: 30px 50px;
+    font-size: 2rem;
+    color: var(--Text-design);
+}
+
+body .contactcontainer .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .contactcontainer .contact .contactcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+
+form {
+    padding: 0px 50px;
+    width: 70%;
+    color: var(--Text-color);
+    justify-content: center;
+    background-color: var(--border-color);
+    border-radius: 10px;
+    padding: 3%;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--Text-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+
+form .fbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+
+form button {
+    text-decoration: none;
+    color: var(--Text-design);
+    font-weight: bolder;
+    border: 4px solid #000;
+    border-color: var(--Text-design);
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    color: var(--Text-color);
+    background-color: var(--Text-design);
+}
+
+
+
+/* CSS FOR FOOTER SECTION */
+
+body footer {
+    background-color: var(--header-background);
+
+}
+
+body footer .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh !important;
+}
+
+.social-icons {
+    display: flex;
+    ;
+    flex-direction: row;
+    list-style: none;
+    padding-right: 30px;
+}
+
+.social-icons li a {
+    padding-right: 30px;
+    font-size: 1.8rem;
+    color: var(--Text-color);
+}
+
+.social-icons li a:hover {
+    color: var(--Text-design);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+/*CSS FOR POPUP MESSAGE */
+body .popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+body .popup-content {
+    background-color: rgb(30, 60, 148);
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    color: rgb(255, 187, 0);
+}
+
+body .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*RESPONSIVENESS FOR MEDIA SCREEN BELOW 1010 PX*/
+@media screen and (max-width: 1010px) {
+    body header nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 145px;
+        width: 100%;
+    }
+
+    body header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body main .firstsection {
+        flex-direction: column-reverse;
+    }
+
+
+    body main .firstsection .leftsection {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    body main .firstsection>div {
+        width: 50%;
+    }
+
+    .circular-container {
+        display: none;
+    }
+
+    .rightcontainer img {
+        display: none;
+    }
+}
+
+
+
+/* RESPONSIVENESS FOR MEDIA SCREEN BELOW 700 PX*/
+@media screen and (max-width: 700px) {
+
+    body footer .text {
+        padding: 0px 0px;
+        font-size: small;
+    }
+
+    body .footer .fend img {
+        border-radius: 30px;
+        width: 30px;
+        height: 30px;
+    }
+
+    body .footer {
+        display: flex;
+        padding: -1px 5px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    body main .firstsection .leftsection #element {
+        font-size: 1rem;
+    }
+
+    body main .firstsection .leftsection {
+        font-size: 1rem;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    body main .firstsection .leftsection .fullstack {
+        font-size: 1.4rem;
+    }
+
+    body main .firstsection .leftsection .myname {
+        font-size: 2.3rem;
+    }
+}
+
+
+
+
+
+
+
