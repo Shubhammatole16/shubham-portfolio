@@ -37,8 +37,8 @@ function downloadResume() {
   // Create savecv element
   const savecv = document.createElement("a");
 
-  savecv.href = "files/SHUBHAM_MATOLE_CV.pdf";
-  savecv.download = "SHUBHAM_MATOLE_CV.pdf";
+  savecv.href = "files/Shubham_Matole_CV.pdf";
+  savecv.download = "Shubham_Matole_CV.pdf";
   savecv.style.display = "none";
 
   // Trigger a click event  to initiate the download
