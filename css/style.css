@@ -65,6 +65,7 @@ body header nav ul li {
     list-style: none;
     margin: 0 23PX;
     padding-top: 15px;
+    transition: all ease 0.5s;
 }
 
 
@@ -144,9 +145,12 @@ body section .firstsection .leftsection .fullstack {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all ease 1s;
 }
 
-
+.circular-container img:hover {
+    scale:1.05;
+}
 
 body section .firstsection .leftsection .purple {
     color: var(--Text-design);
