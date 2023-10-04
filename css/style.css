@@ -401,7 +401,6 @@ body footer .footer {
 
 .social-icons {
     display: flex;
-    ;
     flex-direction: row;
     list-style: none;
     padding-right: 30px;
