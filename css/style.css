@@ -407,6 +407,7 @@ body footer .footer {
 }
 
 .social-icons li i {
+    margin-right: 30px;
     font-size: 1.8rem;
     color: var(--Text-color);
     transition: all ease 0.5s;
