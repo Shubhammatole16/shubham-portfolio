@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shubham's Portfolio</title>
+    <link rel="icon" href="files/sp.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -23,11 +24,11 @@
             <!--Start of right-->
             <div class="right">
                 <ul>
-                    <li onclick="scrollToSection('home')">Home</li>
-                    <li onclick="scrollToSection('project')">Projects</li>
-                    <li onclick="scrollToSection('about')">About</li>
-                    <li onclick="scrollToSection('contact')">Contact</li>
-                    <li>
+                    <li class="nav-items" onclick="scrollToSection('home')" style="--i:1;">Home</li>
+                    <li class="nav-items" onclick="scrollToSection('project')" style="--i:2;">Projects</li>
+                    <li class="nav-items" onclick="scrollToSection('about')" style="--i:3;">About</li>
+                    <li class="nav-items" onclick="scrollToSection('contact')" style="--i:4;">Contact</li>
+                    <li style="--i:5;">
                         <button class="btn1" onclick="myFunction()"> <img id="mode" src="files/light.png"></button>
                     </li>
                 </ul>
@@ -44,14 +45,14 @@
     <section id="home">
         <!--Start of firstsection -->
         <section class="firstsection">
-            <div class="leftsection">Hi there, <div class="myname">My name is <span class="purple">Shubham Matole</span>
+            <div class="leftsection" id="minimize-right">Hi there, <div class="myname">My name is <span class="purple">Shubham Matole</span>
                 </div>
                 <div class="fullstack">Full-Stack Web Developer</div>
                 <span id="element"></span><br><br>
                 <button class="btn2" onclick="downloadResume()">Download CV</button>
-                <button class="btn3" onclick="scrollToSection('contact')">Get in touch</button>
+                <button class="btn3" onclick="scrollToSection('contact')">Let's Talk</button>
             </div>
-            <div class="circular-container"><img src="files/developer-dark.png" id="developer"></div>
+            <div class="circular-container" id="minimize-left"><img src="files/developer-dark.png" id="developer"></div>
         </section>
         <!--End of firstsection -->
         <!-- <hr> -->
@@ -65,7 +66,7 @@
     <section class="projectcontainer" id="project">
         <h1>Projects</h1>
         <!--Start of project 1-->
-        <div class="project">
+        <div class="project" id="project1">
             <!--Start of container1-->
             <div class="container1" id="container1">
                 <!--Start of leftcontainer1-->
@@ -95,7 +96,7 @@
         <!--End of project-->
         <br>
         <!--Start of project 2-->
-        <div class="project">
+        <div class="project" id="project2">
             <!--Start of container1-->
             <div class="container1" id="container1">
                 <!--Start of leftcontainer1-->
@@ -129,7 +130,7 @@
 
         <br>
         <!--Start of project 3-->
-        <div class="project">
+        <div class="project" id="project3">
             <!--Start of container1-->
             <div class="container1" id="container1">
                 <!--Start of leftcontainer1-->
@@ -216,8 +217,8 @@
                     <input type="text" id="message" name="message" placeholder="Enter your message.." required>
                     <br>
                     <div class="fbutton">
-                        <button type="submit" onclick="sendEmail(event)">Submit</button>&nbsp;
-                        <button type="reset">Reset</button>
+                        <button type="submit" onclick="sendEmail(event)" id="subbtn">Submit</button>&nbsp;
+                        <button type="reset" id="clrbtn">Reset</button>
                     </div>
                 </form>
             </div>
@@ -251,7 +252,7 @@
             <!--Start of social-container footer-->
             <div class="social-container">
                 <ul class="social-icons">
-                    <li><a href="https://in.linkedin.com/in/shubham-matole-81335021b"><i
+                    <li><a href="https://www.linkedin.com/in/shubham-matole-81335021b"><i
                                 class="fa fa-linkedin"></i></a></li>
                     <li><a href="https://www.instagram.com/shubham._007_"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="https://github.com/Shubhammatole16"><i class="fa fa-github"></i></a></li>
@@ -265,11 +266,11 @@
     </footer>
     <!--End of footer-->
 
-
     <audio id="clickSound">
         <source src="files/click.mp3" type="audio/mpeg">
     </audio>
 
+    <script src="script/new.js"></script>
     <script src="script/js.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
